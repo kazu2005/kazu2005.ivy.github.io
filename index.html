@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゲームの魅力を伝えるサイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#games">ゲームの紹介</a></li>
+                <li><a href="#favorites">好きなゲーム</a></li>
+                <li><a href="#contact">連絡先情報</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- オーディオ要素の追加 -->
+    <audio id="background-music" src="https://maou.audio/05_halzion/" loop></audio>
+    
+    <div class="title">
+        <h1>ゲームの魅力を伝えるサイト</h1>
+    </div>
+    
+    <section class="game-links">
+        <div class="game-link">
+            <a href="https://example.com/game1" target="_blank">
+                <img src="images/game_link1.jpg" alt="ゲーム1">
+                <p>ゲーム1の紹介</p>
+            </a>
+        </div>
+        <div class="game-link">
+            <a href="https://example.com/game2" target="_blank">
+                <img src="images/game_link2.jpg" alt="ゲーム2">
+                <p>ゲーム2の紹介</p>
+            </a>
+        </div>
+        <div class="game-link">
+            <a href="https://example.com/game3" target="_blank">
+                <img src="images/game_link3.jpg" alt="ゲーム3">
+                <p>ゲーム3の紹介</p>
+            </a>
+        </div>
+    </section>
+    
+    <section class="media">
+        <img src="images/featured_image.jpg" alt="特徴的な画像" id="featured-media">
+    </section>
+    
+    <section id="home">
+        <h2>ようこそ！</h2>
+        <p>ここでは私の好きなゲームやおすすめのゲームについて紹介します。</p>
+    </section>
+
+    <section id="about">
+        <h2>自己紹介</h2>
+        <p>こんにちは！私はゲーム好きの○○です。ゲームの世界に夢中になっています。</p>
+    </section>
+
+    <section id="games">
+        <h2>ゲームの紹介</h2>
+        <article>
+            <h3>最新のゲームレビュー</h3>
+            <img src="images/game_review.jpg" alt="ゲームレビューの画像">
+            <p>最新のゲームについてレビューを書いています。ここでその内容をシェアします。</p>
+        </article>
+    </section>
+
+    <section id="favorites">
+        <h2>好きなゲーム</h2>
+        <!-- アクションゲーム -->
+        <article>
+            <h3>アクションゲーム</h3>
+            <div class="game-genre">
+                <img src="images/action_game1.jpg" alt="アクションゲーム1">
+                <img src="images/action_game2.jpg" alt="アクションゲーム2">
+                <img src="images/action_game3.jpg" alt="アクションゲーム3">
+            </div>
+        </article>
+        <!-- RPG -->
+        <article>
+            <h3>RPG</h3>
+            <div class="game-genre">
+                <img src="images/rpg_game1.jpg" alt="RPGゲーム1">
+                <img src="images/rpg_game2.jpg" alt="RPGゲーム2">
+                <img src="images/rpg_game3.jpg" alt="RPGゲーム3">
+            </div>
+        </article>
+        <!-- スポーツゲーム -->
+        <article>
+            <h3>スポーツゲーム</h3>
+            <div class="game-genre">
+                <img src="images/sports_game1.jpg" alt="スポーツゲーム1">
+                <img src="images/sports_game2.jpg" alt="スポーツゲーム2">
+                <img src="images/sports_game3.jpg" alt="スポーツゲーム3">
+            </div>
+        </article>
+    </section>
+
+    <section id="contact">
+        <h2>連絡先情報</h2>
+        <p>お問い合わせは以下のSNSからどうぞ。</p>
+        <ul>
+            <li><a href="https://twitter.com/yourusername">Twitter</a></li>
+            <li><a href="https://facebook.com/yourusername">Facebook</a></li>
+            <li><a href="https://instagram.com/yourusername">Instagram</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>©2024 自分の名前</p>
+        <ul>
+            <li><a href="https://twitter.com/yourusername">Twitter</a></li>
+            <li><a href="https://facebook.com/yourusername">Facebook</a></li>
+            <li><a href="https://instagram.com/yourusername">Instagram</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('background-music');
+            audio.play().catch(function(error) {
+                console.log('Autoplay was prevented.');
+            });
+        });
+    </script>
+</body>
+</html>
